@@ -1,0 +1,30 @@
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title>Error Page</title>
+                <script type='text/javascript'> 
+                        var i=1 
+                        function move(){ 
+                                value=""+i+"" 
+                                i=i+1 
+                                if(i<=3){ //5는 시간 (단위: 초) 
+                                        setTimeout("move()",1000) 
+                                }else{ 
+                                        location.href='https://cse.koreatech.ac.kr'; 
+                                } 
+                        } 
+                </script> 
+                <script language="JavaScript" Event="onLoad" For="window"> 
+                        <!-- 
+                        move(); 
+                        //--> 
+                </script>
+        </head>
+        <body>
+                <center>
+                <h1>404</h1>
+                <p>Oops, Sorry.<br>Page is not found!</p>
+                <img src="/var/www/cse/modules/message/skins/xedition/img/error.png" width="340" height="400" />
+                </center>
+        </body>
+</html>
